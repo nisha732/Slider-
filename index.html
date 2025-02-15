@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>India's Beauty</h1><br><br>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                
+                <img src="image1.jpg">
+                <div class="caption"><h4>Valley of Flowers,Uttarakhand</h4>
+                <h6>A breathtaking UNESCO World Heritage Site with colourful flowers and mountains</h6></div>
+            </div>
+            <div class="slide">
+                <img src="image2.jpg">
+                <div class="caption"><h4>Gateway of India,Mumbai</h4>
+                <h6>An iconic monument overlooking the Arabian Sea</h6></div>
+            </div>
+            <div class="slide">
+                <img src="image3.jpg">
+                <div class="caption"><h4>Mysore Palace,Karnataka</h4>
+                <h6>A stunning royal palace with Indo-Saracenic architecture</h6></div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="thumbnails">
+        <img src="image1.jpg" onclick="setSlide(0)">
+        <img src="image2.jpg" onclick="setSlide(1)">
+        <img src="image3.jpg" onclick="setSlide(2)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
